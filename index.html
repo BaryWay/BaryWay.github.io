@@ -1,1 +1,236 @@
-wawaawawdddddddddddd
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Page title -->
+    <title>LUNA | Responsive Admin Theme</title>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor\fontawesome\css\font-awesome.css">
+    <link rel="stylesheet" href="vendor\animate.css\animate.css">
+    <link rel="stylesheet" href="vendor\bootstrap\css\bootstrap.css">
+	<link rel="stylesheet" href="vendor\toastr\toastr.min.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="styles\pe-icons\pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="styles\pe-icons\helper.css">
+    <link rel="stylesheet" href="styles\stroke-icons\style.css">
+    <link rel="stylesheet" href="styles\style.css">
+	
+<!-- Vendor scripts -->
+<script src="vendor\pacejs\pace.min.js"></script>
+<script src="vendor\jquery\dist\jquery.min.js"></script>
+<script src="vendor\bootstrap\js\bootstrap.min.js"></script>
+<script src="vendor\toastr\toastr.min.js"></script>
+
+<!-- App scripts -->
+<script src="scripts\luna.js"></script>
+
+</head>
+<body>
+
+<!-- Wrapper-->
+<div class="wrapper">
+
+    <!-- Header-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div id="mobile-menu">
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.htm">
+                    LUNA
+                    <span>v.1.3</span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="left-nav-toggle">
+                    <a href="">
+                        <i class="stroke-hamburgermenu"></i>
+                    </a>
+                </div>
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control" placeholder="Search data for analysis" style="width: 175px">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="versions.htm">Versions
+                            <span class="label label-warning pull-right">2</span>
+                        </a>
+                    </li>
+                    <li class="profil-link" style="
+    margin-top: 8px;
+">
+                        <a href="login.htm" class="align-self-center" style="color:black;font-family: 'TT Commons Medium'; font-size:28px;line-height: 28px;">
+                            262782782,000
+                            <!-- <img src="https://coin-without-bugs.vkforms.ru/static/media/vk_black.7621c8e9.svg" class="img-circle" alt=""> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header-->
+
+    <!-- Navigation-->
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+               
+                <li>
+                    <a href="#tables" data-toggle="collapse" aria-expanded="false">
+                        Игры<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="tables" class="nav nav-second collapse in">
+                        <li><a href="tableStyles.htm">Кости</a></li>
+                        <li><a href="dataTables.htm">Монетка</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#forms" data-toggle="collapse" aria-expanded="false">
+                        From controls <span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="forms" class="nav nav-second collapse">
+                        <li><a href="formElements.htm"> Basic elements </a></li>
+                        <li><a href="autocomplete.htm"> Autocomplete </a></li>
+                        <li><a href="controls.htm"> Selection controls </a></li>
+                        <li><a href="textEditor.htm"> Text editor </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#charts" data-toggle="collapse" aria-expanded="false">
+                        Charts and graphs<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="charts" class="nav nav-second collapse">
+                        <li><a href="flotCharts.htm">Flot charts</a></li>
+                        <li><a href="chartJs.htm">ChartJS</a></li>
+                        <li><a href="sparkline.htm">Sparkline</a></li>
+                        <li><a href="datamaps.htm">Datamaps</a></li>
+                    </ul>
+                </li>
+
+               
+                <li class="nav-info">
+                    <i class="pe pe-7s-shield text-accent"></i>
+
+                    <div class="m-t-xs">
+                        <span class="c-white">LUNA</span> admin theme with Dark UI style for monitoring and administration web applications.
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- End navigation-->
+
+
+    <!-- Main content-->
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="view-header">
+                        <div class="pull-right text-right" style="line-height: 14px">
+                            <small>UI Elements<br>General<br> <span class="c-white">Tabs</span></small>
+                        </div>
+                        <div class="header-icon" style="margin-right:10px">
+                            <img src="https://image.flaticon.com/icons/svg/181/181883.svg"/>
+                        </div>
+                        <div class="header-title">
+                            <h3>Кости</h3>
+                            <small>
+                                Шанс выигрыша: 50%
+                            </small>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+			<script>
+			$(document).ready(function () {
+toastr.options = {
+            "debug": false,
+            "newestOnTop": false,
+            "positionClass": "toast-bottom-right",
+            "closeButton": true,
+            "progressBar": true
+        };
+	toastr.info('Info - This is a custom LUNA info notification');
+	toastr.info('Info - This is a custom LUNA info notification');
+	toastr.info('Info - This is a custom LUNA info notification');
+		
+		});
+			</script>
+
+
+			<div class="row justify-content-center">
+
+				
+                <div class="col-md-12">
+                    <div class="panel panel-filled">
+                        <div class="panel-body text-center">
+							<div class="row">
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+								<p style="font-size:320px;line-height: 230px; color:#f6a821" class="text-center">
+									⚃
+								</p>
+							
+								<div class="form-group text-center">
+									<div class="row">
+									<div class="col-md-12">
+										<input type="email" style="z-index:999989" class="form-control" id="inputEmail3" value="100" placeholder="Ставка">
+										<p class="help-block">Возможный выигрыш: 200</p>
+									</div>
+									</div>
+								</div>
+								<div class="form-group" style="margin-bottom:0">
+									<div class="row">
+										<div class="col-md-6 col-xl-6 col-sm-6">
+										<a href="#" class="btn btn-block btn-w-md btn-accent btn-squared">1-3</a>
+										</div>
+								
+										<div class="col-md-6 col-xl-6 col-sm-6">
+										<a href="#" class="btn btn-block btn-w-md btn-accent btn-squared">4-6</a>
+										</div>
+									</div>
+								</div>
+                            </div>
+							<div class="col-md-4">
+							</div>
+							
+							</div>
+							
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+
+         
+
+
+        </div>
+    </section>
+    <!-- End main content-->
+
+</div>
+<!-- End wrapper-->
+
+
+
+</body>
+
+</html>
